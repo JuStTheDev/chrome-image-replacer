@@ -41,6 +41,7 @@ chrome.storage.sync.get('state', function(data) {
         var url = 'https://picsum.photos/' + width + '/' + height + '/?' + random;
         $(this).addClass('ir-processed');
         this.src = url;
+	$('picture source').remove();
       });
     });
   }
