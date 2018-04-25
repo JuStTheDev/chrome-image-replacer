@@ -1,0 +1,28 @@
+{
+  "name": "Lorem Image Replacer",
+  "description": "Switch all images to Random Images",
+  "version": "0.1",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "declarativeContent"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["jquery-1.10.2.min.js","function.js"],
+    "css": ["style.css"]
+  }],
+
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+
+  "manifest_version": 2
+}

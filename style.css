@@ -1,0 +1,7 @@
+img:hover {
+	filter: saturate(0) brightness(0.5);
+}
+
+img {
+	transition: filter 0.3s ease;
+}
